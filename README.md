@@ -30,3 +30,16 @@ You can use the `install.sh` script to symlink those utilities to your location 
 sh install.sh /usr/local/bin
 ```
 
+## Better Touch Tool installation
+
+In order for this to work in better touch tool you will have to add a new button in your touchbar.
+
+1. First create a new TouchBar trigger
+2. Select `TouchBar Widget` and then `Shell script/Task widget`
+3. In the `Script` field enter the following program: 
+```sh
+cpuHistory > /dev/null
+cpuGraph
+```
+
+You can tweak the refresh rate by selecting another time interval.
