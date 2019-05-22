@@ -25,11 +25,6 @@ in order to update the icon in the touchbar with the new image.
 You can use the `install.sh` script to symlink those utilities to your location of your preference by giving it the path as argument. I personally put them in `/usr/local/bin`. Which means I use the script like that
 
 ```sh
-./install.sh /usr/local/bin
+sh install.sh /usr/local/bin
 ```
 
-You might want to make all these executable so you probably need
-
-```sh
-chmod -x cpuActivity.sh cpuGraph.swift cpuHistory.sh install.sh
-```
