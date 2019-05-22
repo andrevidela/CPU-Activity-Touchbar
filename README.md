@@ -25,7 +25,19 @@ Since my own laptop has 4 cores I divide the percentage by 400. If you have more
 
 # Installation
 
-You can use the `install.sh` script to symlink those utilities to your location of your preference by giving it the path as argument. I personally put them in `/usr/local/bin`. Which means I use the script like that
+Pull the project with
+```sh
+git pull https://github.com/andrevidela/CPU-Activity-Touchbar.git
+```
+
+Then go into its directory
+
+```sh
+cd CPU-Activity-Touchbar
+```
+
+Here, you can use the `install.sh` script to symlink those utilities to your location of your preference by giving it
+the path as argument. I personally put them in `/usr/local/bin`. Which means I use the script like that
 
 ```sh
 sh install.sh /usr/local/bin
@@ -33,7 +45,7 @@ sh install.sh /usr/local/bin
 
 ## Better Touch Tool installation
 
-In order for this to work in better touch tool you will have to add a new button in your touchbar.
+In order for this to work you will need BetterTouchTool and you will have to add a new button in your touchbar.
 
 1. First create a new TouchBar trigger
 2. Select `TouchBar Widget` and then `Shell script/Task widget`
