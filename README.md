@@ -1,6 +1,7 @@
 # CPU-Activity-Touchbar
 Utilities to enable CPU Activity as a touchbar widget
 
+![screenshot example](screenshot_example.png)
 
 This allows the touchbar to display a graph of the CPU activity over the last 100 seconds by interval of 5 seconds.
 
