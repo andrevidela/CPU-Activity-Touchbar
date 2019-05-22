@@ -20,6 +20,8 @@ This script reads off the `/tmp/cpu.log` file, parses it, and generates a graph 
 location `/tmp/cpulogimage.heic`. It also prints out the JSON file that will be interpreted by BTT
 in order to update the icon in the touchbar with the new image.
 
+Since my own laptop has 4 cores I divide the percentage by 400. If you have more (or less) cores you might want to change the "coreCount" variable in this file.
+
 # Installation
 
 You can use the `install.sh` script to symlink those utilities to your location of your preference by giving it the path as argument. I personally put them in `/usr/local/bin`. Which means I use the script like that

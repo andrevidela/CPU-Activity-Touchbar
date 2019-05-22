@@ -13,6 +13,10 @@ import CoreGraphics
 import CoreImage
 import AVFoundation
 
+let pictureHeight = 44
+let pictureWidth = 40
+let coreCount = 4
+
 func getCPUHistory() -> String? {
     return try? String(contentsOfFile: "/tmp/cpu.log", encoding: .utf8)
 }
@@ -38,12 +42,9 @@ func setSize<T>(_ array: [T], size: Int, defaultValue: T) -> [T] {
 }
 
 func handleAllData() -> [Float] {
-    let parsed = parseDataString(getCPUHistory()!).map { $0 / 400}
+    let parsed = parseDataString(getCPUHistory()!).map { $0 / (coreCount * 100)}
     return setSize(parsed, size: 20, defaultValue: 0)
 }
-
-let pictureHeight = 44
-let pictureWidth = 40
 
 public struct PixelData {
     var a:UInt8 = 255
